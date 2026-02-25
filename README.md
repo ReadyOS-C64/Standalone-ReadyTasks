@@ -16,13 +16,19 @@ ReadyTasks is a standalone Commodore 64 task outliner extracted from ReadyOS.
 - File open/save compatible with ReadyOS Task List text format
 - Black-background tuned TUI theme
 
+## Download C64 Binaries
+- [READY TASKS (.D64)](readytasks.d64)
+- [READY TASKS (.PRG)](readytasks.prg)
+  
+## Screenshots
+
   <img width="711" height="538" alt="image" src="https://github.com/user-attachments/assets/0ffdb4a2-6520-4789-8d3b-9984722ccd86" />
 
   <img width="706" height="536" alt="image" src="https://github.com/user-attachments/assets/8bcc55fa-23e1-462d-a8b2-550b65e49b5e" />
 
-<img width="713" height="536" alt="image" src="https://github.com/user-attachments/assets/a6510f15-dedb-4cc1-b713-085130c0f077" />
+  <img width="713" height="536" alt="image" src="https://github.com/user-attachments/assets/a6510f15-dedb-4cc1-b713-085130c0f077" />
 
-<img width="713" height="541" alt="image" src="https://github.com/user-attachments/assets/83ea8961-9a55-46a1-be95-8ceac52fa44f" />
+  <img width="713" height="541" alt="image" src="https://github.com/user-attachments/assets/83ea8961-9a55-46a1-be95-8ceac52fa44f" />
 
 
 ## Requirements
