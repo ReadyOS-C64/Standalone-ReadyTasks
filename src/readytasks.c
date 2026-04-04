@@ -1799,7 +1799,7 @@ static void show_help_popup(void) {
     tui_puts(3, 14, "F5:SAVE   F6:SAVE AS", UI_MUTED_COLOR);
     tui_puts(3, 15, "F7:OPEN   /:SEARCH", UI_MUTED_COLOR);
     tui_puts(3, 16, "RET:NEW   DEL:DELETE", UI_MUTED_COLOR);
-    tui_puts(3, 17, "+/-:PAGE  STOP:EXIT", UI_MUTED_COLOR);
+    tui_puts(3, 17, "+/-:PAGE UP/DN  STOP:EXIT", UI_MUTED_COLOR);
     tui_puts(3, 19, "RET/F8/STOP: CLOSE", UI_ACCENT_COLOR);
 
     while (1) {
