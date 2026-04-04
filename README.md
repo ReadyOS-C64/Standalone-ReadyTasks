@@ -19,7 +19,7 @@ ReadyTasks is a standalone Commodore 64 task outliner extracted from ReadyOS.
 ## Download C64 Binaries
 - [READY TASKS (.D64)](readytasks.d64)
 - [READY TASKS (.PRG)](readytasks.prg)
-  
+
 ## Screenshots
 
   <img width="711" height="538" alt="image" src="https://github.com/user-attachments/assets/0ffdb4a2-6520-4789-8d3b-9984722ccd86" />
@@ -30,11 +30,10 @@ ReadyTasks is a standalone Commodore 64 task outliner extracted from ReadyOS.
 
   <img width="713" height="541" alt="image" src="https://github.com/user-attachments/assets/83ea8961-9a55-46a1-be95-8ceac52fa44f" />
 
-
 ## Requirements
 
 - `cc65` (`cl65`)
-- `c1541` (VICE tools) - to buld a D64 automatically
+- `c1541` (VICE tools) - to build a D64 automatically
 - `x64sc` or `x64` (VICE emulator) or another to run locally.
 
 ## Build
@@ -67,6 +66,37 @@ Equivalent:
 ```bash
 ./scripts/run_vice.sh readytasks.d64 readytasks.prg
 ```
+
+Console mode (for headless terminals):
+
+```bash
+make run-console
+```
+
+You can also force the emulator binary:
+
+```bash
+VICE_BIN=x64 make run
+```
+
+Optional PRG inject mode (off by default to match ReadyOS run behavior):
+
+```bash
+VICE_PRG_MODE=1 make run
+```
+
+Print the exact VICE command for debugging:
+
+```bash
+VICE_DEBUG=1 make run
+```
+
+### Run Troubleshooting
+
+- If `make run` fails with GTK/GSettings errors, your installed VICE binary is likely a GUI build that needs a desktop session.
+- Try `make run-console` first.
+- If `x64sc` fails, try `VICE_BIN=x64 make run`.
+- If launch behavior differs from ReadyOS, leave `VICE_PRG_MODE` unset (default `0`).
 
 ## Manual C64 Flow
 

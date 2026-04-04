@@ -41,8 +41,11 @@ d64: $(DISK)
 run: d64 scripts/run_vice.sh
 	./scripts/run_vice.sh $(DISK) $(APP)
 
+run-console: d64 scripts/run_vice.sh
+	VICE_CONSOLE=1 ./scripts/run_vice.sh $(DISK) $(APP)
+
 clean:
 	rm -f $(APP) $(DISK) $(SRC_DIR)/*.o $(LIB_DIR)/*.o
 	rm -rf $(OBJ_DIR)
 
-.PHONY: all d64 run clean
+.PHONY: all d64 run run-console clean
